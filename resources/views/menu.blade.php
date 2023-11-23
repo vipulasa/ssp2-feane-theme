@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('body_class', 'sub_page')
-
 @section('content')
     <section class="food_section layout_padding">
         <div class="container">

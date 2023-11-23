@@ -31,7 +31,7 @@
     <!-- responsive style -->
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet"/>
 </head>
-<body class="@yield('body_class')">
+<body class="{{ !\Illuminate\Support\Facades\Route::is('home') ? 'sub_page' : '' }}">
 <div id="app">
     {{--    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">--}}
     {{--        <div class="container">--}}

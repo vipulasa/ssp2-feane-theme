@@ -8,7 +8,7 @@
     <header class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
             <span>
               Feane
             </span>
@@ -109,7 +109,6 @@
             </nav>
         </div>
     </header>
-    <!-- end header section -->
 
     @if(\Illuminate\Support\Facades\Route::is('home'))
         <section class="slider_section ">
@@ -193,7 +192,6 @@
                     </ol>
                 </div>
             </div>
-
         </section>
     @endif
 </div>
