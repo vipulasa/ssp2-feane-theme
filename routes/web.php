@@ -12,7 +12,24 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Auth::routes();
+
+Route::get('/book-table', function () {
+    return view('book-a-table');
+})->name('boot-table');
+
+Route::get('/menu', function () {
+    return view('menu');
+})->name('menu');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home');
+
+
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
